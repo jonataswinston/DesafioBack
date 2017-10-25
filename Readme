@@ -1,0 +1,4 @@
+Esse projeto foi feito utilizando o Intellij comunity edition.
+Testei utilizando um banco de dados mySQL disponibilizado no GCP (Google Cloud).
+Caso tenha interesse em testar no seu proprio banco, basta alterar as variaveis
+na classe "Connect". O driver do JDBC está na pasta "Res".

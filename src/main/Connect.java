@@ -13,19 +13,20 @@ public class Connect extends InsertData {
 
     protected static Connection con;
     protected static Statement stmt;
-    private static String ip_Serv = "35.198.0.84";
-    private static String port = "3306";
-    private static String url = "jdbc:mysql://"+ip_Serv+":"+port+"/";
-    private static String db = "testes";
     private static String driver = "com.mysql.jdbc.Driver";
-    private static String user = "applet";
-    private static String paswd = "qwe123";
-    protected static String tabela = "tb_customer_account";
+    //parametros para conexão com o Banco De Dados;
+    private static String ip_Serv = "35.198.0.84";//ip do servidor
+    private static String port = "3306";//porta do banco
+    private static String bdDados = "testes";//banco de dados
+    private static String user = "applet";//usuário do banco
+    private static String paswd = "qwe123";//senha do usuário
+    protected static String tabela = "tb_customer_account";//tabela a ser usada
+    private static String url = "jdbc:mysql://"+ip_Serv+":"+port+"/";
 
     public static void openConnectionSQL(){
     	try{
             Class.forName(driver);
-            con = DriverManager.getConnection(url+db,user,paswd);
+            con = DriverManager.getConnection(url+bdDados,user,paswd);
             stmt = con.createStatement();
         }catch (Exception e){
             System.out.println(e);
