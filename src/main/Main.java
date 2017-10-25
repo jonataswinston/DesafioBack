@@ -7,6 +7,7 @@ import static main.InsertData.insertCustomerAccount;
 public class Main {
 
     public static void main(String[]args) {
+        //teste
         Scanner ler = new Scanner(System.in);
         String res = "";
         do {
