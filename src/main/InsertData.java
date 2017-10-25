@@ -5,7 +5,6 @@ import static main.Connect.*;
 public class InsertData {
     public static Scanner ler = new Scanner(System.in);
 
-    private static int idDoCliente = 0;
     protected static String nomeDoCliente = "";
     protected static String cpfcnpjDoCliente = "";
     protected static String statusDoCliente = "";
